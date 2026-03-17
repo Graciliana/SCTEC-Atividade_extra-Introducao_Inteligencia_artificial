@@ -155,73 +155,86 @@ As análises serão conduzidas para responder às seguintes questões:
 
 ### Comportamento das corridas
 
-Qual a taxa de cancelamento das corridas?
+- Qual a taxa de cancelamento das corridas?
 
-Quais regiões apresentam maior número de corridas?
+- Quais regiões apresentam maior número de corridas?
 
-Quais dias da semana possuem maior demanda?
+- Quais dias da semana possuem maior demanda?
 
-Quais horários concentram o maior volume de corridas?
+- Quais horários concentram o maior volume de corridas?
 
 ### Oferta de motoristas
 
-Existem regiões onde faltam motoristas?
+- Existem regiões onde faltam motoristas?
 
-Em quais locais ocorre maior frequência de corridas sem motorista disponível (No Driver Found)?
+- Em quais locais ocorre maior frequência de corridas sem motorista disponível (No Driver Found)?
 
 ### Cancelamentos
 
-Quais são os principais motivos de cancelamento por parte dos clientes?
+- Qual percentual de corridas não são concluídas?
 
-Quais são os principais motivos de cancelamento por parte dos motoristas?
+- Qual tipo de veículo tem maior taxa de cancelamento?
 
-Existe algum padrão de cancelamento associado a localização, horário ou tipo de veículo?
+- Existe relação entre tempo de espera (Avg VTAT) e cancelamento?
+
+- Quais são os principais motivos de cancelamento por parte dos clientes?
+
+- Quais são os principais motivos de cancelamento por parte dos motoristas?
+
+- Existe algum padrão de cancelamento associado a localização, horário ou tipo de veículo?
 
 ### Receita e desempenho da plataforma
 
-Quais tipos de veículos geram maior receita?
+- Quais tipos de veículos geram maior receita?
 
-Existe relação entre distância da corrida e valor pago?
+- Existe relação entre distância da corrida e valor pago?
 
 ### Experiência do usuário
 
-Como estão distribuídas as avaliações dos motoristas?
+- Como estão distribuídas as avaliações dos motoristas?
 
-Existe relação entre tipo de corrida e avaliações recebidas?
+- Existe relação entre tipo de corrida e avaliações recebidas?
 
 ### Características das corridas
 
-Corridas curtas são mais frequentes do que corridas longas?
+- Corridas curtas são mais frequentes do que corridas longas?
 
-Qual a distância média das corridas?
+- Qual a distância média das corridas?
 
-Objetivo da análise
+---
+
+## Objetivo da análise
 
 Responder a essas perguntas permitirá gerar insights relevantes sobre o funcionamento da plataforma, como:
 
-identificação de regiões com desequilíbrio entre oferta e demanda
+- identificação de regiões com desequilíbrio entre oferta e demanda
 
-compreensão dos principais fatores que levam ao cancelamento de corridas
+- compreensão dos principais fatores que levam ao cancelamento de corridas
 
-análise dos padrões de demanda ao longo do tempo
+- análise dos padrões de demanda ao longo do tempo
 
-avaliação do impacto da distância e do tipo de veículo na geração de receita
+- avaliação do impacto da distância e do tipo de veículo na geração de receita
 
 Esses insights podem contribuir para melhorar a eficiência operacional da plataforma e a experiência dos usuários.
-8. Ferramentas utilizadas
+
+---
+
+## 8. Ferramentas utilizadas
 
 As principais ferramentas utilizadas no projeto incluem:
 
-Python
+- Python
 
-Pandas (manipulação de dados)
+- Pandas (manipulação de dados)
 
-NumPy
+- NumPy
 
-Matplotlib
+- Matplotlib
 
-Seaborn
+- Seaborn
 
-Conclusão
+---
+
+## Conclusão
 
 Com os dados devidamente tratados e estruturados, o dataset encontra-se pronto para a realização da Análise Exploratória de Dados (EDA), etapa fundamental para identificar padrões, gerar insights e apoiar futuras análises ou modelos preditivos.
