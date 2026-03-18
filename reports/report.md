@@ -2,6 +2,8 @@
 
 1. Objetivo do Projeto
 
+Plataformas de mobilidade urbana enfrentam desafios relacionados à oferta e demanda de motoristas, cancelamentos de corridas e variação de preços. A análise desses dados é fundamental para otimizar a operação e melhorar a experiência dos usuários.
+
 O objetivo deste projeto é realizar uma análise exploratória de dados (EDA) em um dataset de corridas de transporte urbano (similar a serviços de ride-hailing), com o intuito de identificar padrões relacionados a:
 
 - status das corridas
@@ -91,11 +93,15 @@ Foram aplicadas diferentes estratégias de imputação conforme o tipo de variá
 
 - Mediana para variáveis de avaliação
 
-- Zero para variáveis associadas a eventos que não ocorreram
+- Plataformas de mobilidade urbana enfrentam desafios relacionados à oferta e demanda de motoristas, cancelamentos de corridas e variação de preços. A análise desses dados é fundamental para otimizar a operação e melhorar a experiência dos usuários.
 
 - Categoria "No Reason" para variáveis categóricas com ausência de motivo
 
 Após o tratamento, o dataset ficou livre de valores ausentes.
+
+### 5.1 Tratamento de Outliers
+
+Foi realizada a análise de outliers nas variáveis numéricas, especialmente em `Booking Value` e `Ride distance`. Valores iguais a zero foram utilizados para variáveis associadas a corridas não concluídas, como Booking Value e Ride Distance, representando ausência de faturamento e deslocamento, respectivamente.
 
 ---
 
@@ -145,6 +151,16 @@ A análise será conduzida nas seguintes etapas:
 
 - avaliação dos motoristas
 
+- avaliação dos clientes
+
+- horarios de maior demanda
+
+- dias da semana com maior demanda
+
+- regioes com maior e menor demanda
+
+- motivos de cancelamento
+
 ---
 
 ## 7. Próximos passos da análise
@@ -189,6 +205,8 @@ As análises serão conduzidas para responder às seguintes questões:
 
 - Existe relação entre distância da corrida e valor pago?
 
+- Existe relação entre o tipo de veículo e o valor da corida?
+
 ### Experiência do usuário
 
 - Como estão distribuídas as avaliações dos motoristas?
@@ -200,6 +218,10 @@ As análises serão conduzidas para responder às seguintes questões:
 - Corridas curtas são mais frequentes do que corridas longas?
 
 - Qual a distância média das corridas?
+
+- Qual dia da semana a distância das corridas são maiores?
+
+- Qual horario do dia possui corridas mais curta e maior valor?
 
 ---
 
@@ -223,18 +245,16 @@ Esses insights podem contribuir para melhorar a eficiência operacional da plata
 
 As principais ferramentas utilizadas no projeto incluem:
 
-- Python
+- Python (linguagem princiapla)
 
 - Pandas (manipulação de dados)
 
-- NumPy
+- NumPy (Operações numéricas e estatisticas)
 
-- Matplotlib
-
-- Seaborn
+- Matplotlib e Seaborn (Visualização dos dados)
 
 ---
 
 ## Conclusão
 
-Com os dados devidamente tratados e estruturados, o dataset encontra-se pronto para a realização da Análise Exploratória de Dados (EDA), etapa fundamental para identificar padrões, gerar insights e apoiar futuras análises ou modelos preditivos.
+Com os dados devidamente tratados e estruturados, o dataset encontra-se pronto para a realização da Análise Exploratória de Dados (EDA), etapa fundamental para identificar padrões, gerar insights e apoiar futuras análises ou modelos preditivos e tomada de decisão orientada a dados.
